@@ -1,4 +1,8 @@
-﻿<h1>Coding Events</h1>
+﻿@using CodingEvents.Models
+
+@model List<Event>
+
+<h1>Coding Events</h1>
 
 <p>
     <a asp-controller="Events" asp-action="Add">Add Event</a>
@@ -8,18 +12,34 @@
     <a asp-controller="Events" asp-action="Delete">Delete Event</a>
 </p>
 
-@if (ViewBag.events.Count == 0)
+
+@if (Model.Count == 0)
 {
     <p>No events yet!</p>
 }
 else
 {
-    <ul>
-        @foreach (var meeting in ViewBag.events)
+    <table class = "table">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Contact Email</th>
+            <th>Type</th>
+        </tr>
+        <tr>
+
+        @foreach (var meeting in Model)
         {
-        <li>(@meeting.Id) @meeting.Name: @meeting.Description </li>
+        <tr>
+            <td>@meeting.Id</td>
+            <td>@meeting.Name</td>
+            <td>@meeting.Description</td>
+            <td>@meeting.ContactEmail</td>
+            <td>@meeting.Type</td>
+        </tr>
         }
-    </ul>
+    </table>
 }
 
 <partial name="/Views/Shared/_LinkListPartial.cshtml" />
