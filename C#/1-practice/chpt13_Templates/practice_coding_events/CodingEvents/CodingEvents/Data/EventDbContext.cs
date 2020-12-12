@@ -13,8 +13,15 @@ namespace CodingEvents.Data
         public DbSet<EventCategory> EventCategories { get; set; }
 
         public DbSet<EventTag> EventTags { get; set; }
+
+        public DbSet<EventTagJoin> EventTagsJoined { get; set; }
         public EventDbContext(DbContextOptions<EventDbContext> options) : base(options)
         {
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<EventTagJoin>().HasKey(evt => new { evt.EventId, evt.TagId });
         }
     }
 }

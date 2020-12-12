@@ -34,7 +34,7 @@ namespace CodingEvents.Controllers
 
         [HttpPost]
         //[Route("/ProcessCategory")]
-        public IActionResult ProcessCreateTagForm(AddTagViewModel addTagViewModel)
+        public IActionResult Add(AddTagViewModel addTagViewModel)
         {
             if (ModelState.IsValid)
             {
@@ -51,6 +51,39 @@ namespace CodingEvents.Controllers
 
             return View("Create", addTagViewModel);
         }
+
+        public IActionResult AddEvent(int id)
+        {
+            Event theEvent = context.Events.Find(id);
+            List<EventTag> possibleTags = context.EventTags.ToList();
+
+            AddEventTagViewModel viewModel = new AddEventTagViewModel(theEvent, possibleTags);
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        public IActionResult AddEvent(AddEventTagViewModel viewModel)
+        {
+           if (ModelState.IsValid)
+            {
+               int eventId = viewModel.EventId;
+                int tagId = viewModel.TagId;
+
+                EventTagJoin eventTag = new EventTagJoin
+                {
+                    EventId = eventId,
+                    TagId = tagId
+                };
+
+                context.EventTagsJoined.Add(eventTag);
+                context.SaveChanges();
+
+                return Redirect("/Events/Detail/" + eventId);
+            }
+           
+            return View(viewModel);
+        }
+
 
     }
 }

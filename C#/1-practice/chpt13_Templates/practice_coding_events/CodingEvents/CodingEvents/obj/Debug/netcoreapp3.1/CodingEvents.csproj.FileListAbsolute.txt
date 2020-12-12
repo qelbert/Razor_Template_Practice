@@ -66,3 +66,5 @@ C:\Users\elber\Desktop\LC101\C#\1-practice\chpt13_Templates\practice_coding_even
 C:\Users\elber\Desktop\LC101\C#\1-practice\chpt13_Templates\practice_coding_events\CodingEvents\CodingEvents\obj\Debug\netcoreapp3.1\Razor\Views\EventCategory\Create.cshtml.g.cs
 C:\Users\elber\Desktop\LC101\C#\1-practice\chpt13_Templates\practice_coding_events\CodingEvents\CodingEvents\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Create.cshtml.g.cs
 C:\Users\elber\Desktop\LC101\C#\1-practice\chpt13_Templates\practice_coding_events\CodingEvents\CodingEvents\obj\Debug\netcoreapp3.1\Razor\Views\Tag\Index.cshtml.g.cs
+C:\Users\elber\Desktop\LC101\C#\1-practice\chpt13_Templates\practice_coding_events\CodingEvents\CodingEvents\obj\Debug\netcoreapp3.1\Razor\Views\Events\Detail.cshtml.g.cs
+C:\Users\elber\Desktop\LC101\C#\1-practice\chpt13_Templates\practice_coding_events\CodingEvents\CodingEvents\obj\Debug\netcoreapp3.1\Razor\Views\Tag\AddEvent.cshtml.g.cs

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6U6NxddGL0pYirTry+mJz+KKGWJo80wK7y11yshWRuNElYOgHBUNQdxji0NHmR2ETPMaVAUGtk8V/YEAMkXWBw==",
+  "dgSpecHash": "xHrcDeDwIwJ2m3ugAqRpkLRvgHn8J5GdaYMUkH/9PrpF6Tiragm38Wp3VffFGbvkCy8oYWVha1x5WPNEKeAfyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elber\\Desktop\\LC101\\c#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
+  "projectFilePath": "C:\\Users\\elber\\Desktop\\LC101\\C#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elber\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\elber\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
