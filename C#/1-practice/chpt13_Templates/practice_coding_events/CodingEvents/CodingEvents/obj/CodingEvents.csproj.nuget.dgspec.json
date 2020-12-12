@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elber\\Desktop\\LC101\\C#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj": {}
+    "C:\\Users\\elber\\Desktop\\LC101\\c#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elber\\Desktop\\LC101\\C#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj": {
+    "C:\\Users\\elber\\Desktop\\LC101\\c#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elber\\Desktop\\LC101\\C#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
+        "projectUniqueName": "C:\\Users\\elber\\Desktop\\LC101\\c#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
         "projectName": "CodingEvents",
-        "projectPath": "C:\\Users\\elber\\Desktop\\LC101\\C#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
+        "projectPath": "C:\\Users\\elber\\Desktop\\LC101\\c#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\CodingEvents.csproj",
         "packagesPath": "C:\\Users\\elber\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elber\\Desktop\\LC101\\C#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\obj\\",
+        "outputPath": "C:\\Users\\elber\\Desktop\\LC101\\c#\\1-practice\\chpt13_Templates\\practice_coding_events\\CodingEvents\\CodingEvents\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elber\\AppData\\Roaming\\NuGet\\NuGet.Config",

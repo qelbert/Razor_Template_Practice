@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace CodingEvents.ViewModels
 {
-    public class AddEventCategoryViewModel
+    public class AddTagViewModel
     {
-        [Required(ErrorMessage = "Event Name is Required")]
-        [StringLength(20, MinimumLength = 3, ErrorMessage = "Category name must be between 3 and 20 characters")]
+        [StringLength(20, MinimumLength = 3, ErrorMessage = "Tag name must be between 3 and 20 characters")]
         public string Name { get; set; }
     }
 }
