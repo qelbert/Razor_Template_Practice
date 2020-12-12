@@ -1,5 +1,9 @@
-﻿@using CodingEvents.ViewModels;
-@model AddEventViewModel
+﻿@model CodingEvents.ViewModels.AddEventViewModel
+
+@*@using CodingEvents.ViewModels;
+@model AddEventViewModel*@
+
+
 
 <h1>Add Event</h1>
 
@@ -24,8 +28,8 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="Type"></label>
-        <select asp-for="Type" asp-items="Model.EventTypes"></select>
+        <label asp-for="CategoryId">Event Type</label>
+        <select asp-for="CategoryId" asp-items="Model.Categories"></select>
     </div>
 
     <input type="submit" value="Add Event" />
