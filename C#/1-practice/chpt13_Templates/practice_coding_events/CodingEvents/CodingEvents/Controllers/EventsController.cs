@@ -131,7 +131,12 @@ namespace CodingEvents.Controllers
                 .Include(e => e.Category)
                 .Single(e => e.Id == id);
 
-            AddEventDetailViewModel viewModel = new AddEventDetailViewModel (theEvent);
+            List<EventTagJoin> eventTags = context.EventTagsJoined
+                .Where(evt => evt.EventId == id)
+                .Include(EventTag => EventTag.Tag)
+                .ToList();
+
+            AddEventDetailViewModel viewModel = new AddEventDetailViewModel (theEvent, eventTags);
             return View(viewModel);
         }
     }
