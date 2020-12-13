@@ -69,16 +69,25 @@ namespace CodingEvents.Controllers
                int eventId = viewModel.EventId;
                 int tagId = viewModel.TagId;
 
-                EventTagJoin eventTag = new EventTagJoin
-                {
-                    EventId = eventId,
-                    TagId = tagId
-                };
+                List<EventTagJoin> existingItems = context.EventTagsJoined
+                    .Where(evt => evt.EventId == eventId)
+                    .Where(evt => evt.TagId == tagId)
+                    .ToList();
 
-                context.EventTagsJoined.Add(eventTag);
-                context.SaveChanges();
+                if (existingItems.Count == 0)
+                {
+                    EventTagJoin eventTag = new EventTagJoin
+                    {
+                        EventId = eventId,
+                        TagId = tagId
+                    };
+
+                    context.EventTagsJoined.Add(eventTag);
+                    context.SaveChanges();
+                }
 
                 return Redirect("/Events/Detail/" + eventId);
+    
             }
            
             return View(viewModel);
